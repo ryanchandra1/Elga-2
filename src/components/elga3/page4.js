@@ -1,0 +1,133 @@
+import React from "react";
+import Header from "../header";
+import Footer from "../footer";
+import Img from "../../elements/img";
+import DropCV from "../dropZone/dropcv";
+
+function Page4() {
+  return (
+    <main className="w-full h-full relative">
+      <section className="flex flex-col relative px-[50px]">
+        <div className="relative">
+          <Header />
+          <div className="absolute right-0 top-0 z-[-1] h-full">
+            <Img src="assets/img/img-1.svg" alt="img main" className="" />
+          </div>
+        </div>
+
+        <section className="MAIN flex flex-col relative">
+
+          <section className="flex flex-row w-1/2 -mt-5">
+            <div className="flex  pt-10">
+              <text className="font-rubik font-medium text-[20px] text-[#252525] text-left pr-20">
+              Join Us and Be Part of the fun!
+              </text>
+            </div>
+
+            <div className="flex flex-col">
+              <text className="font-rubik font-semibold text-[200px] leading-[200px] w-1/3">
+                Join US<span className="text-[#F7941D]">!</span>
+              </text>
+              <Img
+                src="assets/img/vector-arrow-kananbawah.svg"
+                alt="vector kanan bawah"
+                className="w-[100px] h-[100px] translate-x-[350px] -translate-y-[120px]"
+              />
+            </div>
+          </section>
+
+          <section className="flex flex-col mt-[100px]">
+            <div className="flex justify-center items-center py-20">
+                <text className="text-[75px] font-rubik font-semibold ">
+                Open <span className="text-[#F7941D]">Position</span>
+                </text>
+
+            </div>
+            <div className="flex flex-row justify-between">
+              <button className="flex flex-row border border-black rounded-sm items-center justify-center space-x-5 py-2 px-3 w-[237px]">
+                <Img
+                  src="assets/img/icon-1-zimbra.svg"
+                  alt="zimbra icon"
+                  className="w-[31px] h-[31px] "
+                />
+                <text className="font-rubik font-medium text-[30px] text-[#252525] line-clamp-1">
+                  Zimbra
+                </text>
+              </button>
+              <button className="flex flex-row border border-black rounded-sm items-center justify-center space-x-5 py-2 px-3 w-[237px]">
+                <Img
+                  src="assets/img/icon-2-zap.svg"
+                  alt="zap icon"
+                  className="w-[31px] h-[31px] "
+                />
+                <text className="font-rubik font-medium text-[30px] text-[#252525] line-clamp-1">
+                  Data Center
+                </text>
+              </button>
+              <button className="flex flex-row border border-black rounded-sm items-center justify-center py-2 px-3 w-[237px]">
+                <Img
+                  src="assets/img/icon-3-barchart.svg"
+                  alt="barchart icon"
+                  className="w-[31px] h-[31px] "
+                />
+                <text className="font-rubik font-medium text-[30px] text-[#252525] line-clamp-1">
+                  Internet of Building
+                </text>
+              </button>
+              <button className="flex flex-row border border-black rounded-sm items-center justify-center py-2 px-3 w-[237px]">
+                <Img
+                  src="assets/img/icon-4-success.svg"
+                  alt="success icon"
+                  className="w-[31px] h-[31px] "
+                />
+                <text className="font-rubik font-medium text-[30px] text-[#252525] line-clamp-1">
+                  Dedicated Internet
+                </text>
+              </button>
+            </div>
+          </section>
+
+          <section className="flex flex-col border border-black rounded-sm mt-10">
+            <div className="bg-cover bg-center">
+              <Img
+                src="assets/img/pic.svg"
+                alt="pic"
+                className="w-full h-full"
+              />
+            </div>
+            <div className="flex flex-col px-5">
+              <text className="font-rubik font-medium text-[#252525] text-[35px]">
+                Zimbra Full Administrative Management
+              </text>
+              <text className="font-rubik font-medium text-[#252525] text-[20px]">
+                Lorem ipsum dolor sit amet consectetur. Odio neque tellus massa
+                faucibus. Convallis risus etiam habitant a fermentum at. In
+                scelerisque sit commodo pulvinar ultrices ultricies scelerisque
+                magna. Praesent nisl arcu elit vulputate quis at.
+              </text>
+              <div className="flex justify-end items-end px-5 pb-2">
+                <button className="border border-[#0E467B] rounded-xl text-[#0E467B] text-[20px] font-roboto font-medium justify-end max-w-[160px] items-end p-2">
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section className="flex flex-col relative justify-center items-center py-16">
+          <div className="font-rubik font-medium justify-center items-center">
+            <text className="text-[#252525] text-[55px]">Upload Your <span  className="text-[#F7941D]">CV Here!</span></text>
+          </div>
+
+          <div>
+            <DropCV />
+          </div>
+        </section>
+
+        </section>
+        <Footer />
+      </section>
+    </main>
+  );
+}
+
+export default Page4;

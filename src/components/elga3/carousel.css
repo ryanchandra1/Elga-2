@@ -1,0 +1,13 @@
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
